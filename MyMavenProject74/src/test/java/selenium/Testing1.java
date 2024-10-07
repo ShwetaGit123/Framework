@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
-
 public class Testing1 {
   @Test(dataProvider = "dp")
   public void f(Integer n, String s) {
@@ -25,7 +24,6 @@ public class Testing1 {
   public void afterMethod() {
 	  System.out.println("AfterMethod");
   }
-
 //This is new commit from Shweta
   @DataProvider //If you want to run your test multiple times with different set of data then u can use @DataProvider.
   public Object[][] dp() {
